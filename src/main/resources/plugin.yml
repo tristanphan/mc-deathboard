@@ -1,0 +1,24 @@
+name: DeathBoard
+version: ${project.version}
+main: com.tristanphan.deathboard.DeathBoard
+api-version: 1.13
+
+commands:
+  dc:
+    description: Manages the DeathCount Scoreboard
+    usage: /<command> [help | disable | enable]
+    aliases: [deathcount,deathboard]
+
+permissions:
+  deathboard.*:
+    default: op
+    description: Give players with op everything by default
+    children:
+      deathboard.disable: true
+      deathboard.reload: true
+  deathboard.disable:
+    default: true
+    description: You have the ability to enable and disable the scoreboards
+  deathboard.reload:
+    default: op
+    description: You have the ability to reload the scoreboards
