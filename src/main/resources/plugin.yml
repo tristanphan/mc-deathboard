@@ -1,6 +1,6 @@
 name: DeathBoard
 version: ${project.version}
-main: com.tristanphan.deathboard.DeathBoard
+main: com.tristanphan.DeathBoard.DeathBoard
 api-version: 1.13
 
 commands:
